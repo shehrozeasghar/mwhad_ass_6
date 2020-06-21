@@ -198,23 +198,67 @@
 // capitalize("There is no way")
 
 
-//Task - 12
-document.write("<br><br>Task-12<br><br>")
+// //Task - 12
+// document.write("<br><br>Task-12<br><br>")
 
-function longWord(stringg) {
-    var seprate = stringg.split(" ")
-    var wordLength = 0
-    var wordItself = ""
-        // document.write(seprate)
-    for (var i = 0; i < seprate.length; i++) {
-        if (seprate[i].length > wordLength) {
-            wordLength = seprate[i].length
-            wordItself = seprate[i]
-        }
-    }
-    return wordItself
+// function longWord(stringg) {
+//     var seprate = stringg.split(" ")
+//     var wordLength = 0
+//     var wordItself = ""
+//         // document.write(seprate)
+//     for (var i = 0; i < seprate.length; i++) {
+//         if (seprate[i].length > wordLength) {
+//             wordLength = seprate[i].length
+//             wordItself = seprate[i]
+//         }
+//     }
+//     return wordItself
+// }
+
+
+// var stringg = "Here we have Biggest shops"
+// document.write("The string is: " + stringg + "<br>The longest word is: " + longWord(stringg))
+
+
+
+// //Task - 13
+// document.write("<br><br>Task-13<br><br>")
+
+// function occurance(stringg, letter) {
+//     var occur = 0
+//     for (var i = 0; i < stringg.length; i++) {
+//         if (stringg[i] == letter) {
+//             occur = occur + 1
+//         }
+//     }
+//     return occur
+// }
+
+
+// var stringg = prompt("Enter text here")
+// var stringg1 = stringg.toLowerCase()
+// var letter = prompt("Enter letter here")
+// var letter1 = letter.toLowerCase()
+// document.write("The provided string is: " + stringg + "<br>The letter " + letter + " appeared " + occurance(stringg1, letter1) +
+//     " times in the string")
+
+
+
+//Task - 14
+document.write("<br><br>Task-14<br><br>")
+var pi = 3.14
+
+function calcCircumference(radius) {
+    var circum = (2 * pi * radius).toFixed(2)
+    return circum
+}
+
+function calcArea(radius) {
+    var radSq = Math.pow(radius, 2)
+    var area = pi * radSq
+    return area
 }
 
 
-var stringg = "Here we have Biggest shops"
-document.write("The string is: " + stringg + "<br>The longest word is: " + longWord(stringg))
+var radius = 10
+document.write("The radius of circle is " + radius + "<br>The circumference of circle is " + calcCircumference(radius) + "<br>The Area of circle is " + calcArea(radius))
