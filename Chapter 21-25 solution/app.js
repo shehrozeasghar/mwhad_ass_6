@@ -145,9 +145,17 @@
 
 
 // // Task 15
-
+//(password.length == 6) && 
 // document.write("<br>Task-15<br><br>")
 // var password = prompt("Enter password", "Enter here")
+//     // var reg = new RegExp('^[0-9]$');
+// if ((password != '^[0-9]+$')) {
+//     document.write("<br>Password valid")
+// } else {
+//     document.write("<br>Password invalid")
+// }
+
+
 // // document.write(password.match("^[a-zA-Z]+$"))
 
 // if()
@@ -170,9 +178,9 @@
 // document.write("User input: " + inputt + "<br>Last character of input: " + inputt[inputt.length - 1])
 
 
-// // Task 18
-// document.write("<br>Task-18<br><br>")
-// var temp = "The quick brown fox jumps over the lazy dog";
-// var temp1 = temp.toLowerCase()
-// var count = (temp1.match(/the/g) || []).length;
-// document.write("Text: " + temp + "<br>There are " + count + " occurances of word 'the'");
+// Task 18
+document.write("<br>Task-18<br><br>")
+var temp = "The quick brown fox jumps over the lazy dog";
+var temp1 = temp.toLowerCase()
+var count = (temp1.match(/the/g) || []).length;
+document.write("Text: " + temp + "<br>There are " + count + " occurances of word 'the'");

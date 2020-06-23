@@ -45,20 +45,20 @@
 
 
 
-//Task 7
-document.write("<br>Task-7<br><br>")
-var userWeig = prompt("Enter your weight in Kilograms")
-var matches = userWeig.match(/\d+/g)
-document.write("<br> The weight of user is " + matches + " kilograms")
+// //Task 7
+// document.write("<br>Task-7<br><br>")
+// var userWeig = prompt("Enter your weight in Kilograms")
+// var matches = userWeig.match(/\d+/g)
+// document.write("<br> The weight of user is " + matches + " kilograms")
 
 
-// //Task 8
-// document.write("<br>Task-8<br><br>")
-// var randomee = Math.random() * (11 - 1) + 1 //(Max - min) + min
-// var floory = Math.floor(randomee)
-// var userInput = prompt("Enter the number between 1 and 10")
-// if (userInput == floory) {
-//     document.write("<br>Congratulations.. You have gussed the number")
-// } else {
-//     document.write("<br>Please try again")
-// }
+//Task 8
+document.write("<br>Task-8<br><br>")
+var randomee = Math.random() * (11 - 1) + 1 //(Max - min) + min
+var floory = Math.floor(randomee)
+var userInput = prompt("Enter the number between 1 and 10")
+if (userInput == floory) {
+    document.write("<br>Congratulations.. You have gussed the number")
+} else {
+    document.write("<br>Please try again")
+}
